@@ -27,7 +27,6 @@ The archive and member hashes in [models.json](models.json) pin the exact files.
 - [whisper.cpp](https://github.com/ggml-org/whisper.cpp), commit `231638a0717b7822784297e5980965ffcec05810`: native Small inference (MIT).
 - [ggml](https://github.com/ggml-org/ggml), commit `e2ae679a563014f46c546ce6c6448e8601e4dea6`: shared tensor backend (MIT).
 - [F5-TTS](https://github.com/SWivid/F5-TTS): original architecture/reference implementation (MIT code). Its separately licensed base checkpoints are **not** distributed here; the synthesis checkpoint is the ESpeech release above.
-- [audio.cpp](https://github.com/0xShug0/audio.cpp): another implementation examined during research (Apache-2.0). This release does not distribute its code or models.
 
 The executable implementations are not included in these archives. NVIDIA libraries are obtained separately from [NVIDIA's official redistribution service](https://developer.download.nvidia.com/compute/cuda/redist/redistrib_12.8.1.json) and remain subject to NVIDIA's terms.
 
