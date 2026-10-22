@@ -8,7 +8,7 @@ This repository distributes **model assets and an optional Qt WebEngine runtime 
 
 | Package | Contents | Upstream license |
 | --- | --- | --- |
-| ESpeech + Vocos | ESpeech RL-V2 EMA weights converted to GGUF; F16 matrices and F32 small tensors; embedded Vocos vocoder and vocabulary | ESpeech Apache-2.0; Vocos MIT |
+| ESpeech + Vocos | ESpeech RL-V2 EMA GGUF; attention/FFN Q8_0, AdaLN F16 and other tensors unchanged; embedded Vocos and vocabulary | ESpeech Apache-2.0; Vocos MIT |
 | Whisper Small | Multilingual Small in whisper.cpp format; current Q8_0 weights, previous FP16 release retained | HF release Apache-2.0; OpenAI also publishes Whisper under MIT |
 | RUAccent | v1 dictionaries, tokenizers and ONNX models; turbo3.1 with FP16 embedding storage | MIT |
 
@@ -45,3 +45,7 @@ See [licenses](licenses) for full notices and pinned model cards. The licenses a
 ## Whisper Small Q8_0
 
 The current recognition package is [Whisper Small Q8_0](https://github.com/antonsuslyaev/espeech-whisper-native-runtime/releases/tag/whisper-small-q8-v1). Its archive, member hashes and source notices are in [whisper-small-q8.json](whisper-small-q8.json) and [WHISPER-Q8-NOTICE.txt](WHISPER-Q8-NOTICE.txt). Weights are quantized; intermediate arithmetic remains backend-dependent. The previous FP16 release is immutable and remains available.
+
+## ESpeech attention/FFN Q8_0
+
+The current synthesis package is [ESpeech attention/FFN Q8_0](https://github.com/antonsuslyaev/espeech-whisper-native-runtime/releases/tag/espeech-attention-ffn-q8-v1). It quantizes 132 attention and FFN matrices; AdaLN remains F16. Vocos and other tensors retain their previous converted values and types. See [manifest](espeech-attention-ffn-q8.json) and [license/provenance notice](ESPEECH-Q8-NOTICE.txt). The validation backend restores weights to F16 for the existing floating arithmetic; other compatible backends may select different kernels. The previous F16 model archive is immutable and remains available. No custom voices or reference recordings are included.

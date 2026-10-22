@@ -39,3 +39,7 @@ Native project links and pinned versions appear in README.md. Each project retai
 ## Optional Qt WebEngine runtime
 
 The separate Qt WebEngine release contains unchanged official Qt/PySide binaries, their notices and corresponding sources. See [QT-WEBENGINE.md](QT-WEBENGINE.md) for its own LGPL and Chromium license scope. The model-only descriptions above continue to apply to the model archives.
+
+## ESpeech attention/FFN Q8_0 derivative
+
+The conversion descriptions above record the original models-v1 assets. The current synthesis derivative additionally quantizes 132 attention/FFN matrices to Q8_0. See [ESPEECH-Q8-NOTICE.txt](ESPEECH-Q8-NOTICE.txt) for exact hashes, modifications, sources and retained Apache-2.0/MIT obligations. Original release assets are unchanged.

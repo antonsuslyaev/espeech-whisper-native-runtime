@@ -1,0 +1,30 @@
+ESpeech RL-V2 + Vocos: partial Q8_0 storage derivative
+Prepared 2026-10-22.
+
+ESpeech source: https://huggingface.co/ESpeech/ESpeech-TTS-1_RL-V2/tree/f582b6e5897fe8a5835059405a8439d13bdf7684
+The pinned model card declares Apache-2.0. Preserve Apache-2.0.txt and espeech-model-card.md.
+Upstream checkpoint SHA-256: 2422df03cd4e939411edae06ab063b89340f70a6dee8cdeab812c4add1bdaa6c
+
+Vocos source: https://huggingface.co/charactr/vocos-mel-24khz/tree/0feb3fdd929bcd6649e0e7c5a688cf7dd012ef21
+Copyright (c) 2023 Charactr Inc. MIT; preserve Vocos-MIT.txt and vocos-model-card.md.
+Upstream checkpoint SHA-256: 97ec976ad1fd67a33ab2682d29c0ac7df85234fae875aefcc5fb215681a91b2a
+
+Modifications: select EMA inference tensors, omit training state, rename tensors,
+embed vocabulary and Vocos, store original matrices as F16 and small tensors as F32.
+Then quantize 132 attention and FFN matrices (six in each of 22 DiT blocks) to Q8_0.
+AdaLN, Vocos and all other tensors retain the previous converted values and types.
+No fine-tuning, custom voices, reference recordings or user data are included.
+
+Input GGUF SHA-256: b141e530aae7bda98f80ae1f56d0aae8c8be568ea103c3e181de6c974f125043
+Output GGUF SHA-256: 391a8f2175a5d349964d2582127b801c4dbe1300fe545f9c1e259be3516ad170
+
+Conversion/inference basis: https://github.com/CrispStrobe/CrispASR/tree/46506786de68ef670faa7355c8fb76b2e24a93ab
+Quantization: gguf 0.19.0, Q8_0; https://github.com/ggml-org/llama.cpp/tree/master/gguf-py
+Tensor backend: https://github.com/ggml-org/ggml/tree/e2ae679a563014f46c546ce6c6448e8601e4dea6
+Architecture reference: https://github.com/SWivid/F5-TTS
+No engine executables or implementation sources are included in this model archive.
+
+Inference compatibility: use a backend that supports Q8_0 matrices for these
+operators. Storage precision does not mandate arithmetic precision. Validation
+used restoration to F16 before floating matmul with the baseline F16/F32 path;
+other backends may select different kernels. The original release remains available.

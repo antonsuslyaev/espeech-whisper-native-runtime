@@ -4,53 +4,37 @@
   "download_models": true,
   "archives": [
     {
-      "filename": "espeech-vocos-51e982b8ffaa515b.zip",
-      "label": "Модель синтеза речи",
-      "size": 652599095,
-      "sha256": "51e982b8ffaa515b7d0a4d06b729a708b2ef538d4e10bc50c1d722a915e23233",
+      "filename": "espeech-attention-ffn-q8-088c31f0f578b5d2.zip",
+      "label": "Модель синтеза ESpeech Q8 (внимание и FFN)",
+      "url": "https://github.com/antonsuslyaev/espeech-whisper-native-runtime/releases/download/espeech-attention-ffn-q8-v1/espeech-attention-ffn-q8-088c31f0f578b5d2.zip",
+      "size": 495500100,
+      "sha256": "088c31f0f578b5d22a01741541bcb0085cb519b9447359844851a43858602e2e",
       "files": {
         "native/model.gguf": {
-          "size": 702010176,
-          "sha256": "b141e530aae7bda98f80ae1f56d0aae8c8be568ea103c3e181de6c974f125043"
+          "size": 528995136,
+          "sha256": "391a8f2175a5d349964d2582127b801c4dbe1300fe545f9c1e259be3516ad170"
         },
-        "native/licenses/espeech-vocos/licenses/Apache-2.0.txt": {
-          "size": 11358,
-          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        "native/licenses/espeech-attention-ffn-q8/Apache-2.0.txt": {
+          "size": 11560,
+          "sha256": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5"
         },
-        "native/licenses/espeech-vocos/licenses/RUAccent-MIT.txt": {
-          "size": 1060,
-          "sha256": "5ccb796d1fa25aeec0cc7d3ada4915963cec3b7cacfa2cb39ce00c65761e7ad6"
+        "native/licenses/espeech-attention-ffn-q8/Vocos-MIT.txt": {
+          "size": 1089,
+          "sha256": "7865b6c5e98dee811bd1a2e57f299d32d7fd7f7d4beb7ffc5738de490eb6987f"
         },
-        "native/licenses/espeech-vocos/licenses/Vocos-MIT.txt": {
-          "size": 1069,
-          "sha256": "8f36ba0c214d4f487ffd7ee0b8528da9b67b459bef2d115de9cd001316589f46"
+        "native/licenses/espeech-attention-ffn-q8/espeech-model-card.md": {
+          "size": 10070,
+          "sha256": "67596c426c5e74b70996c5a83f75c2f1f2e5d462c1f5d9335e21618cd6468287"
         },
-        "native/licenses/espeech-vocos/licenses/Whisper-MIT.txt": {
-          "size": 1063,
-          "sha256": "b5d65a59060e68c4ff940e1eddfa6f94b2d68fdf58ed7f4dd57721c997e35e9d"
+        "native/licenses/espeech-attention-ffn-q8/vocos-model-card.md": {
+          "size": 1900,
+          "sha256": "ca5e2097a1f13c37066500587f161a3947681b4c8db498445ce7605505c5d5fd"
         },
-        "native/licenses/espeech-vocos/licenses/model-cards/espeech.md": {
-          "size": 9808,
-          "sha256": "0c8d1735cb1afa7558bdd7c90cfc78c840b36e31bb6b7044607a396cd622e12d"
-        },
-        "native/licenses/espeech-vocos/licenses/model-cards/ruaccent.md": {
-          "size": 2660,
-          "sha256": "13de1b452c87d69d255e0c6b9e7dc6686e672d15746578ea3b20a7d0f4490d7e"
-        },
-        "native/licenses/espeech-vocos/licenses/model-cards/vocos.md": {
-          "size": 1830,
-          "sha256": "5858497d76d58914b29958a0f448e7b4fd3bb54940100baaa7520d4a56d8b3df"
-        },
-        "native/licenses/espeech-vocos/licenses/model-cards/whisper.md": {
-          "size": 20153,
-          "sha256": "967fa44eefe5d3436e040b0f171fc54da67aad96923bae10af37dac9be5bb6b0"
-        },
-        "native/licenses/espeech-vocos/NOTICE.md": {
-          "size": 2694,
-          "sha256": "82ea9c033bc52451f04390154e7addf978cef297bb0dfa84c54be6f687a13cd3"
+        "native/licenses/espeech-attention-ffn-q8/NOTICE.txt": {
+          "size": 2017,
+          "sha256": "b936e6b775fd20593c4af6c9454110c232331cc71e72b31eaf71323a6de64ed2"
         }
-      },
-      "url": "https://github.com/antonsuslyaev/espeech-whisper-native-runtime/releases/download/models-v1/espeech-vocos-51e982b8ffaa515b.zip"
+      }
     },
     {
       "filename": "whisper-small-q8-572728a030693582.zip",
