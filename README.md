@@ -1,8 +1,8 @@
-# ESpeech Whisper Native Runtime — model assets
+# ESpeech Whisper Native Runtime
 
 Versioned model packages for local Russian speech synthesis, recognition and stress marking on native inference backends. Independent packaging project; not an official release of any upstream project.
 
-This repository distributes **model assets and license notices only**. It does not include an application, executable engines, a Python environment, CUDA binaries, voice references or recordings. No application account or personal data is included. A compatible native implementation and a user-supplied reference recording are required for synthesis.
+This repository distributes **model assets and an optional Qt WebEngine runtime component**, with per-component licenses and source information. It does not include an application, speech engine executables, a Python environment, CUDA binaries, voice references or recordings. A compatible speech implementation and a user-supplied reference recording are required for synthesis.
 
 ## Published packages
 
@@ -13,6 +13,14 @@ This repository distributes **model assets and license notices only**. It does n
 | RUAccent | v1 dictionaries, tokenizers and ONNX models; turbo3.1 with FP16 embedding storage | MIT |
 
 The archive and member hashes in [models.json](models.json) pin the exact files. [SHA256SUMS.txt](SHA256SUMS.txt) lists archive hashes. Each archive carries its license notices. Model precision/conversion changes are described in [NOTICE.md](NOTICE.md). A format conversion does not change an upstream license.
+
+## Optional Qt WebEngine component
+
+[Qt WebEngine 6.10.3 for Windows x64](https://github.com/antonsuslyaev/espeech-whisper-native-runtime/releases/tag/qt-webengine-6.10.3-r1) provides an independent HTML/CSS renderer: WebEngine Core/Widgets DLLs, PySide6 bindings, helper executable, resources and en-US/ru locales. The selected files are unmodified members of the official PySide6-Addons wheel, plus ICU data from PySide6-Essentials. Matching base Qt/PySide6 and Python are supplied by the host application.
+
+Download: **99.4 MiB**, unpacked: **223.5 MiB**. Corresponding Qt WebEngine (including Chromium) and PySide source archives are downloadable from the same release, without authentication. They are not downloaded by the runtime installer.
+
+See [component notice and replacement/build instructions](QT-WEBENGINE.md), [provenance](qt-webengine-provenance.json), [file manifest](tooltip-downloads.json) and [archive checksums](QT-SHA256SUMS.txt). Qt/PySide use the LGPL-3.0 option; Chromium retains its component licenses. Full upstream notice files accompany the runtime in `licenses/upstream-notices.zip`, and remain in context in the source archives.
 
 ## Model sources
 
