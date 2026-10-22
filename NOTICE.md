@@ -36,9 +36,6 @@ Changes: selected the turbo3.1 inference subset; stored its embedding table in F
 
 Native project links and pinned versions appear in README.md. Each project retains its own license; no executable code from those projects is distributed in these model archives.
 
-## Optional Qt WebEngine runtime
-
-The separate Qt WebEngine release contains unchanged official Qt/PySide binaries, their notices and corresponding sources. See [QT-WEBENGINE.md](QT-WEBENGINE.md) for its own LGPL and Chromium license scope. The model-only descriptions above continue to apply to the model archives.
 
 ## ESpeech attention/FFN Q8_0 derivative
 
