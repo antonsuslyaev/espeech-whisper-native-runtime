@@ -53,53 +53,33 @@
       "url": "https://github.com/antonsuslyaev/espeech-whisper-native-runtime/releases/download/models-v1/espeech-vocos-51e982b8ffaa515b.zip"
     },
     {
-      "filename": "whisper-small-c58fc719fbcbfb78.zip",
-      "label": "Модель распознавания",
-      "size": 449030613,
-      "sha256": "c58fc719fbcbfb786ce0ebe07f1565f32938b41df00c0968705b565eff7ca8d8",
+      "filename": "whisper-small-q8-572728a030693582.zip",
+      "label": "Модель распознавания Whisper Small Q8",
+      "url": "https://github.com/antonsuslyaev/espeech-whisper-native-runtime/releases/download/whisper-small-q8-v1/whisper-small-q8-572728a030693582.zip",
+      "size": 248778030,
+      "sha256": "572728a030693582141efa581746da3990cdab117399b51af4dc669228f9e05d",
       "files": {
         "native/whisper-small.bin": {
-          "size": 487601984,
-          "sha256": "95b243cd2f8032a6a69ef43a1186ae2cafc333eb50e0ac38db1c787ea0e83784"
+          "size": 264464624,
+          "sha256": "1b080d5ecc6d23c5a88fbdb891561de93598b063ed95d8b47a88e97148dda562"
         },
-        "native/licenses/whisper-small/licenses/Apache-2.0.txt": {
-          "size": 11358,
-          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+        "native/licenses/whisper-small-q8/Apache-2.0.txt": {
+          "size": 11560,
+          "sha256": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5"
         },
-        "native/licenses/whisper-small/licenses/RUAccent-MIT.txt": {
-          "size": 1060,
-          "sha256": "5ccb796d1fa25aeec0cc7d3ada4915963cec3b7cacfa2cb39ce00c65761e7ad6"
+        "native/licenses/whisper-small-q8/Whisper-MIT.txt": {
+          "size": 1084,
+          "sha256": "328df171594796be1ffa76628981c82bdbe2e391edb0204ac37acac6a63cc852"
         },
-        "native/licenses/whisper-small/licenses/Vocos-MIT.txt": {
-          "size": 1069,
-          "sha256": "8f36ba0c214d4f487ffd7ee0b8528da9b67b459bef2d115de9cd001316589f46"
+        "native/licenses/whisper-small-q8/model-card.md": {
+          "size": 20605,
+          "sha256": "78f4514acd699fe6c8ea953273665f036d9fea2e22e972c161360a26555ee544"
         },
-        "native/licenses/whisper-small/licenses/Whisper-MIT.txt": {
-          "size": 1063,
-          "sha256": "b5d65a59060e68c4ff940e1eddfa6f94b2d68fdf58ed7f4dd57721c997e35e9d"
-        },
-        "native/licenses/whisper-small/licenses/model-cards/espeech.md": {
-          "size": 9808,
-          "sha256": "0c8d1735cb1afa7558bdd7c90cfc78c840b36e31bb6b7044607a396cd622e12d"
-        },
-        "native/licenses/whisper-small/licenses/model-cards/ruaccent.md": {
-          "size": 2660,
-          "sha256": "13de1b452c87d69d255e0c6b9e7dc6686e672d15746578ea3b20a7d0f4490d7e"
-        },
-        "native/licenses/whisper-small/licenses/model-cards/vocos.md": {
-          "size": 1830,
-          "sha256": "5858497d76d58914b29958a0f448e7b4fd3bb54940100baaa7520d4a56d8b3df"
-        },
-        "native/licenses/whisper-small/licenses/model-cards/whisper.md": {
-          "size": 20153,
-          "sha256": "967fa44eefe5d3436e040b0f171fc54da67aad96923bae10af37dac9be5bb6b0"
-        },
-        "native/licenses/whisper-small/NOTICE.md": {
-          "size": 2694,
-          "sha256": "82ea9c033bc52451f04390154e7addf978cef297bb0dfa84c54be6f687a13cd3"
+        "native/licenses/whisper-small-q8/NOTICE.txt": {
+          "size": 742,
+          "sha256": "30d9b0265f324ec9287113bf06c7dc07ab36838843c2c9349e0c61d5f81c6ac5"
         }
-      },
-      "url": "https://github.com/antonsuslyaev/espeech-whisper-native-runtime/releases/download/models-v1/whisper-small-c58fc719fbcbfb78.zip"
+      }
     },
     {
       "filename": "ruaccent-f0197d25e3c625fe.zip",

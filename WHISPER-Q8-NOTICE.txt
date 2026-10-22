@@ -1,0 +1,10 @@
+Whisper Small Q8_0
+
+Source: https://huggingface.co/openai/whisper-small/tree/973afd24965f72e36ca33b3055d56a652f456b4d
+The source model card declares Apache-2.0; retain the included license and model card.
+The OpenAI Whisper MIT notice is also preserved.
+
+Modifications: converted the multilingual checkpoint to whisper.cpp FP16, then quantized eligible matrices to Q8_0. No fine-tuning or user recordings are included. Small tensors retain upstream types.
+Quantizer: https://github.com/ggml-org/whisper.cpp/tree/231638a0717b7822784297e5980965ffcec05810/examples/quantize
+FP16 input SHA-256: 95b243cd2f8032a6a69ef43a1186ae2cafc333eb50e0ac38db1c787ea0e83784
+Q8_0 output SHA-256: 1b080d5ecc6d23c5a88fbdb891561de93598b063ed95d8b47a88e97148dda562

@@ -9,7 +9,7 @@ This repository distributes **model assets and an optional Qt WebEngine runtime 
 | Package | Contents | Upstream license |
 | --- | --- | --- |
 | ESpeech + Vocos | ESpeech RL-V2 EMA weights converted to GGUF; F16 matrices and F32 small tensors; embedded Vocos vocoder and vocabulary | ESpeech Apache-2.0; Vocos MIT |
-| Whisper Small | Multilingual Small converted from Hugging Face weights to FP16 whisper.cpp format | HF release Apache-2.0; OpenAI also publishes Whisper under MIT |
+| Whisper Small | Multilingual Small in whisper.cpp format; current Q8_0 weights, previous FP16 release retained | HF release Apache-2.0; OpenAI also publishes Whisper under MIT |
 | RUAccent | v1 dictionaries, tokenizers and ONNX models; turbo3.1 with FP16 embedding storage | MIT |
 
 The archive and member hashes in [models.json](models.json) pin the exact files. [SHA256SUMS.txt](SHA256SUMS.txt) lists archive hashes. Each archive carries its license notices. Model precision/conversion changes are described in [NOTICE.md](NOTICE.md). A format conversion does not change an upstream license.
@@ -41,3 +41,7 @@ The executable implementations are not included in these archives. NVIDIA librar
 ## License scope
 
 See [licenses](licenses) for full notices and pinned model cards. The licenses apply per component, not as one blanket license for the repository. Redistribution is based on the upstream authors' stated grants; no trademark rights or endorsement are implied. Reference recordings are not supplied and must be obtained with appropriate rights.
+
+## Whisper Small Q8_0
+
+The current recognition package is [Whisper Small Q8_0](https://github.com/antonsuslyaev/espeech-whisper-native-runtime/releases/tag/whisper-small-q8-v1). Its archive, member hashes and source notices are in [whisper-small-q8.json](whisper-small-q8.json) and [WHISPER-Q8-NOTICE.txt](WHISPER-Q8-NOTICE.txt). Weights are quantized; intermediate arithmetic remains backend-dependent. The previous FP16 release is immutable and remains available.

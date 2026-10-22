@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "layout": "hybrid",
+  "download_models": true,
+  "archives": [
+    {
+      "filename": "whisper-small-q8-572728a030693582.zip",
+      "label": "Модель распознавания Whisper Small Q8",
+      "url": "https://github.com/antonsuslyaev/espeech-whisper-native-runtime/releases/download/whisper-small-q8-v1/whisper-small-q8-572728a030693582.zip",
+      "size": 248778030,
+      "sha256": "572728a030693582141efa581746da3990cdab117399b51af4dc669228f9e05d",
+      "files": {
+        "native/whisper-small.bin": {
+          "size": 264464624,
+          "sha256": "1b080d5ecc6d23c5a88fbdb891561de93598b063ed95d8b47a88e97148dda562"
+        },
+        "native/licenses/whisper-small-q8/Apache-2.0.txt": {
+          "size": 11560,
+          "sha256": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5"
+        },
+        "native/licenses/whisper-small-q8/Whisper-MIT.txt": {
+          "size": 1084,
+          "sha256": "328df171594796be1ffa76628981c82bdbe2e391edb0204ac37acac6a63cc852"
+        },
+        "native/licenses/whisper-small-q8/model-card.md": {
+          "size": 20605,
+          "sha256": "78f4514acd699fe6c8ea953273665f036d9fea2e22e972c161360a26555ee544"
+        },
+        "native/licenses/whisper-small-q8/NOTICE.txt": {
+          "size": 742,
+          "sha256": "30d9b0265f324ec9287113bf06c7dc07ab36838843c2c9349e0c61d5f81c6ac5"
+        }
+      }
+    }
+  ]
+}
